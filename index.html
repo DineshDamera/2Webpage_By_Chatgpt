@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Restaurant - Home</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="welcome">
-      <h1>Welcome to Our Restaurant</h1>
-      <p>Delicious dishes served with love!</p>
-      <!-- Replace the link with your embedded video link -->
-      <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">Watch Video</a>
-    </section>
-  </main>
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Restaurant</h1>
+            <!-- Embedded YouTube Video -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2023 Restaurant. All rights reserved.</p>
-  </footer>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Information about the restaurant...</p>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p>View our delicious offerings...</p>
+        </section>
+
+        <section id="events">
+            <h2>Special Events</h2>
+            <p>Details about upcoming events...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Restaurant Name</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
